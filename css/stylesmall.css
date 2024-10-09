@@ -1,41 +1,6 @@
 @media all  and (max-width: 500px)
 {
-    html{
-        background-color:rgb(86, 131, 82);
-        color: cornflowerblue;
-        font-size: 0.7em;
-    }
-
-
-    .flexcontainer{
-        display:block;
-        background-color:rgb(83, 57, 114);
-        width: 90%;
-        height: 100%;
-    }
-
-
-    .left{
-        flex: 0.7;
-        width: 90%;
-        height: 100%;
-        background-color: burlywood;
-    }
     
-    .left > img{
-        float:none;
-        width: 90%;
-        max-width: 500px;
-        margin: 5px;
-    }
-    
-    .right{
-        flex: 0.3;
-        width:  90%;
-        height: 100%;
-        background-color:rgb(186, 46, 190);
-    }
-
     
 
 }

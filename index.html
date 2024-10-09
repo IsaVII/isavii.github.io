@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css"/>
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <!---- ---------------- FONT ---------------  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,48 +18,89 @@
         <title>Isa Hellström - Game Programmer Portfolio</title>
     </head>
         <!-- ----------------- BODY ----------------- -->
-    <body>
+    <body class="gradient-custom">
+ 
 
         <header>
-
-            <div class="navBar">
-                <a href="">Abount me</a>
-                <a href="">Unreal Engine</a>
-                <a href="">Unity</a>
-                <a href="">Game Jams</a>
-
-            </div>
+            <nav class="navbar navbar-expand-lg flex-center">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="#">About me</a>
+                      <a class="nav-link" href="#UE">Unreal Engine</a>
+                      <a class="nav-link" href="#Unity">Unity</a>
+                    </div>
+                  </div>
+            
+                </div>
+              </nav>
+             
+             
         </header>
         <img  class="divider" src="./Images/Decorative/Divider.png"> </img>
 
-        <div class="BaseContainer"> 
-            <div class="AboutMe">
-    
-                <div class="left_small">
-                    <h1>Hi, I'm <b>Isa Hellström</b> <br> - a game developer!</h1>
-                    <p>
-                        Unreal Engine or Unity - I am developing games withing both engines with several years of experience.
-                        Clean and performant code is what I provide.<br>
-                        <br>
-                        If needed, I can also create simple 3D models and textures, as well as basic graphical elements.
-
-                    </p>
-
-                </div>
-
+            <!-------- IMAGES -->
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 pad-l-10 pad-r-10 mar-r-0">
+            <div class="col-10 col-sm-8 col-lg-6">
                 <div class="right_large">
-                    <div class="ImageContainer">
-                        <img src="./Images/UnrealEngine/2024-08-06_Farm.png" alt="Unreal Engine: Magical Harvest Farm"> </img>
+                    <div id="carousel_self" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_self" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_self" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel_self" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel_self" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_self" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel_self" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
                     </div>
+                     <div><small>
+                        Originally from Germany, now living in the swedish nature in the middle of a forest. Game development has no limitations.
+                        I love RPGs, cozy games and citybuilders, but also rogue like and survival games. 
+                    </small></div>
                 </div>
-
             </div>
 
+            <div class="col-lg-6">
+            <h1 class="display-6 fw-bold header-baseCol">Hi, I'm <strong>Isa Hellström</strong></h1>
+            <h2 class="display-7 fw-bold header-baseCol">a game developer!</h1>
+              <div class="social"><a href="https://www.linkedin.com/in/isa-hellstr%C3%B6m-229aa6187/" target="_blank"><script src="js/icon_linkedin.cs "></script></a></div>  
+            <p class="lead"> Unreal Engine or Unity - I am developing games with both engines with several years of experience.
+                Clean and performant code is what I provide.<br>
+                A well organized and structured workflow is what I bring with me. 
+                <br><br>
+                If needed, I can also create simple 3D models and textures, as well as basic graphical elements.</p>
+              
+            </div>
         </div>
+
         <br>
         <div class="Skils">
             <div class="left_skills">
-                <h4>Programming</h4>
+                <h4 class="header-baseCol">Programming</h4>
                 <div class="flexcontainer-icons">
                     <img src="./Images/Icons/UE-Icon-2023-White.png" alt="Unreal Engine" width="60px"></img>
                     <img src="./Images/Icons/U_Cube_1C_White.png" alt="Unity"  width="55px"></img>
@@ -76,7 +119,7 @@
             </div>
         </div>
         <div class="right_skills">
-            <h4>Art</h4>
+            <h4 class="header-baseCol">Art</h4>
             <div class="flexcontainer-icons">
                 <img src="./Images/Icons/blender_icon_64x64.png" alt="Blender" width="50px"></img>
                 <img src="./Images/Icons/Adobe_Substance_3D_icon.svg" alt="Substance Painter" width="50px"></img>
@@ -92,135 +135,394 @@
 
         </div>
 
+
         <img  class="divider" src="./Images/Decorative/Divider.png"> </img>
-            <h1>Unreal Engine</h1>
+                  <!------------------------------ SOFT SKILLS --------------------->
+        <div class="flex-center">
+            <h4 class="fw-bold header-baseCol">Soft skills</h4>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <b>Team Leadership  </b><br> 
+                Led a small team of art-interns, adhering to SCRUM principles, while managing organizational and production aspects of the development.<br>
+                Giving constructive feedback and maintaining a good working climate is important. <br>  <br> 
+              </div>
+             
+              <div class="col-md-4">
+                <b>Problem solving skills</b><br>
+                Highly intrinsic motivation leads to a fast learner and problem solver, both needed in game and software development.<br>  <br> 
+              </div>
+              <div class="col-md-4">
+                <b>Organizational talent</b><br>
+                Experience in using tools like Clickup or Trello to maintain a well-structured workflow. <br>  <br> 
+              </div>
+            </div>
+          </div>
 
-            <div class="ProjectBox_left">
-                <h2>Project: Noms Adventure</h2>
-                    <div class="flexcontainer">
-                        <div class="left_1">
-                            <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="GameImages" alt="Unreal Engine: Magical Harvest Farm"> </img>
-                        </div>
-                  
-                        
+        <img  class="divider" src="./Images/Decorative/Divider.png"> </img>
+        <div class="flex-center">
+     
+            <h1 class="fw-bold header-baseCol" id="UE">Unreal Engine</h1>
+        </div>
+     
 
-                            <div class="middle_1">
-
-                                Noms Adventure is a multiplayer-coop adventure. The following systems were adressed during the development:<br>
-                                <li> GAS-System              
-                                </li>
-                                <li> Multiplayer, local & online      
-                                </li>
-                                <li> Physic system           
-                                </li>
-                       
-                                <li> Common-UI & Controller-Support           
-                                </li>
-                                <li> Basic materials & shaders 
-                                </li>
-                                <br>
-                                Further implemented game features: 
-                                <li> Dialogue system           
-                                </li>
-                                <li> Inventory system           
-                                </li>
-                                <li> Abilities / Playerskills            
-                                </li>
-                             </div>
-
-                             <div>
-                                <img  class="vert" src="./Images/Decorative/Divider_Vert.png"> </img>
+           <!------------------------------ NOMS ADVENTURE  --------------------->
+        <div class="row flex-lg-row align-items-center g-5 py-5 pad-l-10 pad-r-10 pad-b--50px mar-r-0">
+             <div class="col-10 col-sm-8 col-lg-6">
+                    <div class="right_large">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
-                        <div class="right_1">
-                                 <p class="tabular">
-                                    <div class="tab"> Company: Moon Flame Games</div>
-                                    <div class="tab">  Coop-Adventure</div>
-                                    <div class="tab">  Status: in development</div>
-                                  <div class="tab">  <img src="./Images/Icons/OtherIcons/ClockIcon.png" class="clockIcon" width="25px"></img> 7 weeks</div>
-                                  <div class="tab">  <img src="./Images/Icons/OtherIcons/team.svg" class="clockIcon" width="25px"></img> 1 developer, 1 artist</div>
-                             
-                                 </p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
-
-                    </div>
-            </div>
-            <div class="ProjectBox_right">
-                <h2>Project: Magical Harvest</h2>
-                    <div class="flexcontainer">
-                        <div class="left_2">
-                            <p class="tabular">
-                                <div class="tab"> Company: Moon Flame Games</div>
-                                <div class="tab"> Farming-Simulation</div>
-                                <div class="tab">  Status: on-hold</div>
-                                <div class="tab">  <img src="./Images/Icons/OtherIcons/ClockIcon.png" class="clockIcon" width="25px"></img> 11 months</div>
-                                <div class="tab">  <img src="./Images/Icons/OtherIcons/team.svg" class="clockIcon" width="25px"></img> 1 developer, 4 artists</div>
-                      
-                               </p>
+                </div>
     
-                                 
-                        </div>
-                        <div>
-                            <img  class="vert" src="./Images/Decorative/Divider_Vert.png"> </img>
-                        </div>
-                        <div class="middle_1">
-                            Transitioned from Unity to Unreal Engine. Implemented features:
-                            <li> Inventory system & management     
-                            </li>
-                            <li> Decoration system      
-                            </li>
-                            <li> Dialogue system      
-                            </li>
-                            <li> Farming feature    
-                            </li>
-                            <li> Dynamically changing environment    
-                            </li>
-                            <li> Day & night cycle with changing seasons    
-                            </li>
-                            <li> Character customizer  
-                            </li>
-                            <li> Asset loading & unloading 
-                            </li>
-                            <li> Basic NPC & Animal AI
-                            </li>
-                            <li> World with streaming levels
-                            </li>
-                            <li> Basic materials & shaders 
-                            </li>
-
-
+                <div class="col-lg-6">
+                <h3 class="fw-bold header-baseCol">Project: <strong>Noms Adventure</strong></h3>
+                3D, PC
+                <script src="js/icon_company.cs "></script>Moon Flame Games<br>
+                <script src="js/icon_clock.cs "></script> 7 weeks 
+                <tab class="space"></tab> <script src="js/icon_human.cs"></script><b>1 developer</b>, 1 artist <br>
+                Coop-Adventure<br>
+                Status: in development <br>
+                <img  class="divider_s" src="./Images/Decorative/Divider.png"> </img>
+                <p class="lead"> Noms Adventure is a multiplayer-coop adventure. The following systems were adressed during the development:<br>
+                    <li> GAS-System              
+                    </li>
+                    <li> Multiplayer, local & online      
+                    </li>
+                    <li> Physic system           
+                    </li>
+           
+                    <li> Common-UI & Controller-Support           
+                    </li>
+                    <li> Basic materials & shaders 
+                    </li>
+                    <br>
+                    Further implemented game features: 
+                    <li> Dialogue system           
+                    </li>
+                    <li> Inventory system           
+                    </li>
+                    <li> Abilities / Playerskills            
+                    </li>
+                </p>
+                </div>
+            </div>
+           
+        <!------------------------------ MAGICAL HARVEST  --------------------->
+        <div class="row flex-lg-row-reverse align-items-center g-2 py-5 pad-l-10 pad-r-10 pad-b--50px mar-r-0">
+            <div class="col-10 col-sm-8 col-lg-6">
+                   <div class="right_large">
+                       <div id="carouselExampleIndicators" class="carousel slide">
+                           <div class="carousel-indicators">
+                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                           </div>
+                           <div class="carousel-inner">
+                               <div class="carousel-item active">
+                                   <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                               </div>
+                               <div class="carousel-item">
+                                   <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                               </div>
+                               <div class="carousel-item">
+                                   <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                               </div>
+                               <div class="carousel-item">
+                                   <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                               </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                               <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                               <span class="visually-hidden">Next</span>
+                           </button>
                        </div>
+                   </div>
+               </div>
+   
+               <div class="col-lg-6">
+               <h3 class="fw-bold header-baseCol">Project: <strong>Magical Harvest</strong></h3>
+               3D, PC
+               <script src="js/icon_company.cs "></script>Moon Flame Games<br>
+               <script src="js/icon_clock.cs "></script> 11 months 
+               <tab class="space"></tab> <script src="js/icon_human.cs"></script><b>1 developer</b>, 4 artists (partly) <br>
+               Farming-simulation<br>
+               Status: on-hold<br>
 
-                       <div class="right_2">
-                        <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="GameImages" alt="Unreal Engine: Magical Harvest Farm"> </img>
-                    </div>
-    
-                    </div>
+                <img  class="divider_s" src="./Images/Decorative/Divider.png"> </img>
+
+               <p class="lead">   Transitioned from Unity to Unreal Engine. Implemented features:<br>
+                <li> Inventory system & management     
+                </li>
+                <li> Decoration system      
+                </li>
+                <li> Dialogue system      
+                </li>
+                <li> Farming feature    
+                </li>
+                <li> Dynamically changing environment    
+                </li>
+                <li> Day & night cycle with changing seasons    
+                </li>
+                <li> Character customizer  
+                </li>
+                <li> Asset loading & unloading 
+                </li>
+                <li> Basic NPC & Animal AI
+                </li>
+                <li> World with streaming levels
+                </li>
+                <li> Basic materials & shaders 
+                </li>
+                <li> Common UI
+                </li>
+                <li> Editor tools in Unreal Engine
+                </li>
+               </p>
+               </div>
+           </div>
+
+
+            <!------------------------------ UNITY  --------------------->
+            <img  class="divider" src="./Images/Decorative/Divider.png"> </img>
+            <div class="flex-center">
+                 <h1 class="fw-bold header-baseCol" id="Unity">Unity</h1>
             </div>
 
-            <img  class="divider" src="./Images/Decorative/Divider.png"> </img>
-                   <p>
-            <h1>Unity</h1>
-            <ul>
-                <li><h2>Noms Adventure</h2></li>
 
-                <li><h2>Magical Harvest</h2></li>
+                <!------------------------------ MAGICAL HARVEST  --------------------->
+                <div class="row flex-lg-row align-items-center g-5 py-5 pad-l-10 pad-r-10 pad-b--50px mar-t--50px mar-r-0">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                           <div class="right_large">
+                           <div id="carouselExampleIndicators" class="carousel slide">
+                               <div class="carousel-indicators">
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                               </div>
+                               <div class="carousel-inner">
+                                   <div class="carousel-item active">
+                                       <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                               </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Next</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+       
+                   <div class="col-lg-6">
+                   <h3 class="fw-bold header-baseCol">Project: <strong>Magical Harvest</strong></h3>
+                   3D, PC
+                   <script src="js/icon_company.cs "></script>Moon Flame Games<br>
+                   <script src="js/icon_clock.cs "></script> 18 months 
+                   <tab class="space"></tab> <script src="js/icon_human.cs"></script><b>1 developer</b>, 1 game designer <br>
+                   Farming-simulation<br>
+                   Status: transitioned to Unreal Engine<br>
+    
+                    <img  class="divider_s" src="./Images/Decorative/Divider.png"> </img>
+           
+                   <p class="lead">During the time of this project, several skills could be learned and improved. Beside implementing the base features
+                     and maintaining a larger project in Unity, efficiency with different 3D and 2D art software were gained.<br>
+                    <li> Inventory system & management     
+                    </li>
+                    <li> Decoration system      
+                    </li>
+                    <li> Dialogue system      
+                    </li>
+                    <li> Farming feature    
+                    </li>
+                    <li> Dynamically changing environment    
+                    </li>
+                    <li> Day & night cycle with changing seasons    
+                    </li>
+                    <li> Character customizer  
+                    </li>
+                    <li> Basic NPC & Animal AI
+                    </li>
+                    <li> Basic materials & shaders 
+                    </li>
+                    <li> UI
+                    </li>
+                    <li> Editor tools with Odin Serializer
+                    </li>
+                   </p>
+                   </div>
+               </div>
+            
+                      <!------------------------------ NEVERRIFT  --------------------->
+            <div class="row flex-lg-row-reverse align-items-center g-2 py-5 pad-l-10 pad-r-10 pad-b--50px mar-r-0">
+                <div class="col-10 col-sm-8 col-lg-6">
+                       <div class="right_large">
+                           <div id="carouselExampleIndicators" class="carousel slide">
+                               <div class="carousel-indicators">
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                               </div>
+                               <div class="carousel-inner">
+                                   <div class="carousel-item active">
+                                       <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                               </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Next</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+       
+                   <div class="col-lg-6">
+                   <h3 class="fw-bold header-baseCol">Project: <strong>Neverrift</strong></h3>
+                   2D, mobile app for trading card game
+                   <script src="js/icon_company.cs "></script>Gate to the Games<br>
+                   <script src="js/icon_clock.cs "></script> 3 months, freelancer
+                  <br>
+    
+                    <img  class="divider_s" src="./Images/Decorative/Divider.png"> </img>
+                 
+                   <p class="lead">While freelancing parttime, experience with the following topics could be gained:
+                    <li> Multiplayer programming with Photon 
+                    </li>
+                    <li> Round-logic for a card game similar to Triple Triad from Final Fantasy 8    
+                    </li>
+                    <li> Round-History implementation for player actions     
+                    </li>
+                    <li> Code improvement & refactoring
+                    </li>
+                   </p>
+                   </div>
+               </div>
+            
+                <!------------------------------ THE DARK MARKET  --------------------->
 
-                <li><h2>The Dark Market - An Idle Horror Story</h2></li>
-
-                <li><h2>Finding Shapes</h2></li>
-            </ul>
-
+               <div class="row flex-lg-row align-items-center g-5 py-5 pad-l-10 pad-r-10 mar-t--50px mar-r-0">
+                <div class="col-10 col-sm-8 col-lg-6">
+                       <div class="right_large">
+                           <div id="carouselExampleIndicators" class="carousel slide">
+                               <div class="carousel-indicators">
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                               </div>
+                               <div class="carousel-inner">
+                                   <div class="carousel-item active">
+                                       <img src="./Images/UnrealEngine/2024-08-06_Farm.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/2024-07-08_Season.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/MagicalHarvest_screenshot.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                                   <div class="carousel-item">
+                                       <img src="./Images/UnrealEngine/Screenshot 2024-08-25 095601.png" class="d-block w-100  d-block mx-lg-auto img-fluid" alt="...">
+                                   </div>
+                               </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Next</span>
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+       
+                   <div class="col-lg-6">
+                   <h3 class="fw-bold header-baseCol">Project: <strong>The Dark Market - An Idle Horror Story</strong></h3>
+                   2D, mobile
+                   <script src="js/icon_company.cs "></script>Cold Theatre Studios<br>
+                   <script src="js/icon_clock.cs "></script> effectively 6 months 
+                   <tab class="space"></tab> <script src="js/icon_human.cs"></script><b>1 developer</b>, 1 artist, 1 writer, 1 producer <br>
+                    Idle-Clicker<br>
+    
+                    <img  class="divider_s" src="./Images/Decorative/Divider.png"> </img>
+                   <p class="lead">An idle clicker mobile game. More experience with mobile development could be obtained. <br>
+                    <li> Idle mechanics
+                    </li>
+                    <li> Adding advertising   
+                    </li>
+                    <li> Save-load     
+                    </li>
+                    <li> Quest system    
+                    </li>
+                    <li> Achievements
+                    </li>
+                   </p>
+                   </div>
+               </div>
+            
         </p>
-
-
-        <p>
-            <h1>Game Jams</h1>
-
-
-        </p>
-        
-
-        
 
     </body>
 

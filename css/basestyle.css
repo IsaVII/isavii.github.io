@@ -1,27 +1,39 @@
-html{
-    background-color:midnightblue;
-    color: rgb(173, 213, 231);
-    font-size: 1.2em;
 
-    background-image: url("../Images/Decorative/BG.png");
+
+
+html{
+    background-color:midnightblue !important;
+    color: rgb(173, 213, 231)  !important;
+    font-size: 1.2em  !important;
+
+    background-image: url("../Images/Decorative/BG.png") !important;
     background-repeat: repeat;
-    background-color: #141925;
+    background-color: #141925 !important;
     background-size: cover;
 
 }
 
+.pad-left-10{
+    padding-left: 10%;
+}
+
+.borderImage{
+    border-radius: 40px;
+}
+
+
 a:link {
-    color: rgb(90, 166, 201);
+    color: rgb(90, 166, 201 ) !important;
 
 }
 
 a:hover {
-    color: aqua;
+    color: aqua !important;
 }
 
 a:visited {
-    color: rgb(90, 166, 201);
-}
+    color: rgb(90, 166, 201) !important;
+} 
 
 .divider{
     margin-top: 5px;
@@ -53,16 +65,7 @@ header{
     align-items: center;
 }
 
-.navBar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   display: flex;
-   gap:2rem;
-   padding-top: 10px;
-   padding-bottom: 10px;
 
-}
 
 
 
@@ -97,6 +100,12 @@ h4{
     align-content: center;
  }
 
+ .text-small{
+    font-size: 0.5em !important;
+ }
+
+
+
 
  /* ------------- ABOUT ME ------------*/
  .AboutMe{
@@ -109,7 +118,7 @@ h4{
    
  }
 
- .ImageContainer > img {
+ .ImageContainer{
     float: right;
     width: 70%;
     max-width: 500px;
@@ -167,6 +176,9 @@ h4{
     gap: 20px;
     margin-bottom: 10px;
  }
+
+  /* ------------- Soft Skills ------------*/
+
 
 
  /* ------------- NEXT ------------*/

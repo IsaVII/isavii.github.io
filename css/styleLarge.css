@@ -1,0 +1,153 @@
+html{
+    color: rgb(255, 255, 255)  !important;
+    font-size: 1.1em  !important;
+
+}
+
+body{
+    color: rgb(173, 213, 231)  !important;
+}
+
+strong{
+    color: rgb(118, 201, 240)  !important;
+}
+
+.nav-link{
+    color: rgb(173, 213, 231)  !important;
+}
+
+a:hover{
+    color: rgb(103, 207, 255)  !important;
+}
+
+.mar-r-0 {
+   margin-right: 0px !important;
+}
+
+
+.header-baseCol{
+    color: rgb(255, 255, 255)  !important;
+}
+
+
+.gradient-custom {
+    background: rgb(14, 54, 107);
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(22, 60, 85), rgb(19, 7, 32));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(14, 54, 107), rgb(19, 7, 32));
+  }
+
+.divider{
+    margin-top: 5px;
+    height: 1px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.divider_s{
+    height: 1px;
+    width: 90%;
+    background-color: aliceblue;
+    opacity: 0.3;
+}
+
+.vert{
+    height: 200px;
+    width: 1px;
+    background-color: aliceblue;
+}
+
+
+
+header{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.pad-l-10px{
+    padding-left: 10px;
+}
+
+.pad-t-10px{
+    padding-top: 10px;
+}
+
+.mar-t--50px{
+    margin-top: -50px !important;
+}
+
+.space{
+    padding-left: 10px;
+}
+
+.pad-l-10{
+    padding-left: 10%;
+}
+
+.pad-r-10{
+    padding-right: 10%;
+}
+
+
+.pad-b--50px{
+    margin-bottom: -50px !important; 
+}
+
+.borderImage{
+    border-radius: 40px;
+}
+
+ .social{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+
+
+/* ------- SKILLS ------- */
+.Skils{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 10%;
+ }
+
+ .left_skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .right_skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .flexcontainer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+ }
+
+
+
+
+
