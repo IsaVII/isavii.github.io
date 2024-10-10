@@ -16,6 +16,11 @@ strong{
     color: rgb(173, 213, 231)  !important;
 }
 
+a {
+    color: rgb(177, 220, 240)  !important;
+}
+
+
 a:hover{
     color: rgb(103, 207, 255)  !important;
 }
@@ -70,6 +75,9 @@ header{
  
 }
 
+.w-45{
+    width:  45%;
+}
 
 .flex-center{
     display: flex;
