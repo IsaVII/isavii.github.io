@@ -155,7 +155,15 @@ header{
     margin-bottom: 10px;
  }
 
+.header-container {
+  display: flex;
+  align-items: center; /* vertically center items */
+  gap: 20px; /* space between contact & navbar */
+}
 
+.contact-cv p {
+  padding-left: 20px;
+}
 
 .outer-center {
   display: flex;
