@@ -157,5 +157,99 @@ header{
 
 
 
+.outer-center {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-scroll-container {
+  display: flex;  
+                 /* lay out children horizontally */
+  gap: 20px;                     /* space between project cards */
+  overflow-x: auto;              /* horizontal scrolling */
+ 
+  padding: 20px;
+}
+
+.project-card {
+  flex: 0 0 auto;               /* allow width to be flexible up to max-width */
+  max-width: 400px;             /* maximum width of the card */
+  width: 100%;                  /* card can shrink if container is smaller */
+  scroll-snap-align: start;     /* aligns card to start of scroll */
+  background: #04051f42;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+}
 
 
+.project-card-title {
+    position: relative !important; 
+    height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link {
+    position: relative !important; 
+    display: flex !important;       /* Changed to flex */
+    justify-content: center !important; /* Horizontally centers the logo */
+    top: -10px !important;  
+    width: 100%;
+}
+
+.game-logo {
+    position: relative !important; 
+    top: 10px !important; 
+    max-width: 80%;
+    max-height: 100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.game-logo-magicalharvest {
+    position: relative !important; 
+    top: -10px;
+    max-width: 90%;
+    max-height: 130px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 3. Force the steam logo to the top right */
+.steam-logo {
+    position: absolute !important;
+    top: 0px !important;    /* Distance from top of the link */
+    right: -10px !important;  /* Distance from right of the link */
+    width: 40px !important; 
+    height: 40px !important;
+    z-index: 99 !important;  /* High number to stay on top */
+    pointer-events: none;    /* Allows clicks to pass through to the link below */
+     
+}
+
+.project-meta {
+     position: relative !important; 
+     top: -20px !important; 
+}
+
+.project-type {
+    position: relative !important;
+    top: -5px !important;
+    margin-bottom: -10px !important;
+}
+
+.project-features {
+    list-style-type: disc; /* Or 'none' if you prefer no bullets */
+    padding-left: 20px;
+}
+
+.project-features li {
+    margin-top: 10px;
+}
+
+/* Optional: Removes the margin from the very first item so it aligns with the header */
+.project-features li:first-child {
+    margin-top: 0;
+}
