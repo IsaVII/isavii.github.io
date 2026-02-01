@@ -36,14 +36,15 @@ a:hover{
 
 
 .gradient-custom {
-    background: rgb(14, 54, 107);
-  
+    background: rgb(20, 23, 71);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgb(22, 60, 85), rgb(19, 7, 32));
+   
+     background: -webkit-linear-gradientlinear-gradient(to right, rgb(22, 46, 122), rgb(57, 162, 204));
   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgb(14, 54, 107), rgb(19, 7, 32));
-  }
+ 
+    background: linear-gradient(to right, rgb(22, 46, 122), rgb(57, 162, 204));
+}
 
 .divider{
     margin-top: 5px;
@@ -177,6 +178,28 @@ header{
   overflow-x: auto;              /* horizontal scrolling */
  
   padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #24708f #c0dbe5;  /* thumb | track */
+}
+
+
+/* Chrome, Edge, Safari */
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 10px; /* horizontal scrollbar thickness */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background:   #c0dbe5;   /* light sky-blue track */
+  border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: #24708f;   /* sky-blue thumb */
+  border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #5bb7d9;   /* darker sky-blue on hover */
 }
 
 .project-card {
@@ -184,7 +207,7 @@ header{
   max-width: 400px;             /* maximum width of the card */
   width: 100%;                  /* card can shrink if container is smaller */
   scroll-snap-align: start;     /* aligns card to start of scroll */
-  background: #04051f42;
+  background: #021e383b;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 15px;
@@ -260,4 +283,13 @@ header{
 /* Optional: Removes the margin from the very first item so it aligns with the header */
 .project-features li:first-child {
     margin-top: 0;
+}
+
+.AboutMe
+{
+  background: #021e383b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+
 }

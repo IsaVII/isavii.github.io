@@ -1,6 +1,47 @@
-@media all  and (max-width: 500px)
+@media all  and (max-width: 768px)
 {
     
     
+.horizontal-scroll-container {
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    gap: 20px;
+    overflow-y: auto;         /* enable vertical scroll */
+    overflow-x: hidden;       /* disable horizontal scroll */
+
+    padding: 20px;
+
+    /* Optional: customize vertical scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #24708f #c0dbe5;
+  }
+
+  /* Chrome, Edge, Safari */
+  .horizontal-scroll-container::-webkit-scrollbar {
+    width: 10px;              /* vertical scrollbar thickness */
+    height: auto;             /* ignored but safe */
+  }
+
+  .horizontal-scroll-container::-webkit-scrollbar-track {
+    background: #c0dbe5;
+    border-radius: 10px;
+  }
+
+  .horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background: #24708f;
+    border-radius: 10px;
+  }
+
+  .horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #5bb7d9;
+  }
+
+  .project-card {
+    flex: 0 0 auto;           /* keep card height auto */
+    max-width: 100%;          /* allow full width on small screens */
+    scroll-snap-align: start;
+  }
+}
+
 
 }
