@@ -5,11 +5,11 @@ html{
 }
 
 body{
-    color: rgb(173, 213, 231)  !important;
+    color: rgb(218, 243, 255)  !important;
 }
 
 strong{
-    color: rgb(118, 201, 240)  !important;
+    color: rgb(218, 243, 255) !important;
 }
 
 .nav-link{
@@ -17,7 +17,7 @@ strong{
 }
 
 a {
-    color: rgb(177, 220, 240)  !important;
+     color: rgb(218, 243, 255) !important;
 }
 
 
@@ -47,16 +47,16 @@ a:hover{
 }
 
 .divider{
-    margin-top: 5px;
+    margin-top: 0px;
     height: 1px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(180, 217, 250);
 }
 
 .divider_s{
     height: 1px;
     width: 90%;
-    background-color: aliceblue;
+    background-color: rgb(175, 207, 235);
     opacity: 0.3;
 }
 
@@ -162,8 +162,15 @@ header{
   gap: 20px; /* space between contact & navbar */
 }
 
+.contact-cv {
+    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .contact-cv p {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .outer-center {
@@ -178,7 +185,7 @@ header{
   overflow-x: auto;              /* horizontal scrolling */
  
   padding: 20px;
-  scrollbar-width: thin;
+  scrollbar-width:auto;
   scrollbar-color: #24708f #c0dbe5;  /* thumb | track */
 }
 
@@ -216,7 +223,7 @@ header{
 
 .project-card-title {
     position: relative !important; 
-    height: 150px;
+    height: 125px;
     
     display: flex;
     flex-direction: column;
@@ -290,6 +297,94 @@ header{
   background: #021e383b;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 15px;
+  padding: 7px;
 
 }
+
+
+ .iconAvailability {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255) !important;
+}
+
+.availability-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid rgb(130, 185, 247);
+    box-shadow: 0 0 15px rgba(15, 57, 97, 0.4);
+    margin-bottom: 20px;
+    max-width: 1000px !important;
+    min-width: 360px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.availability-tags {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.availability-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1.1rem;
+    border: 1.5px solid rgb(130, 185, 247);
+    border-radius: 999px;
+    gap: 6px;
+
+    background: rgba(255, 255, 255, 0.03);
+    color: rgb(233, 243, 255);
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.4rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  margin-right: 0.2rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+  .project-tag[data-category="engine"] {
+    background: rgba(120,180,255,0.12);
+    color: #66edff;
+}
+
+.project-tag[data-category="language"] {
+    background: rgba(174, 160, 255, 0.1);
+    color: #a5ccff;
+}
+
+.project-tag[data-category="platform"] {
+    background: rgba(200,140,255,0.10);
+    color: #c47fff;
+}
+
+.project-tag[data-category="concept"] {
+    background: rgba(255,130,110,0.10);
+    color: #df7684;
+}
+
+.project-tag[data-category="style"] {
+    background: rgba(255,200,100,0.10);
+    color: #f0bc55;
+}
+
+
+
