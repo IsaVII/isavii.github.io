@@ -1,0 +1,12 @@
+
+body {
+    padding: 10%;
+    background-color: rgb(182, 132, 175);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    margin-top: 20px;
+     display: flex;
+    flex-wrap: wrap;
+}

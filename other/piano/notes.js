@@ -1,4 +1,4 @@
-const speed = 1;
+const speed =  document.getElementById('slider');
 
 
 // Plays a single note based on noteId (doesn't wait for it to finish)
@@ -51,7 +51,7 @@ async function playNotes() {
     for (let note of noteArray) {
         console.log("Playing:", note.noteId, "for", note.length, "ms");
         playAudioFor(note.noteId);  // Start playing (don't wait)
-        await wait(note.length * speed);    // Wait specified duration before next note
+        await wait(note.length * (1/speed.value));    // Wait specified duration before next note
     }
     console.log("Done!");
 }
